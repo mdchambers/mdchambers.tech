@@ -29,14 +29,22 @@ bower_components
 # node-waf configuration
 .lock-wscript
 
+<<<<<<< HEAD
 # Compiled binary addons (https://nodejs.org/api/addons.html)
+=======
+# Compiled binary addons (http://nodejs.org/api/addons.html)
+>>>>>>> Gatsby setup
 build/Release
 
 # Dependency directories
 node_modules/
 jspm_packages/
 
+<<<<<<< HEAD
 # TypeScript v1 declaration files
+=======
+# Typescript v1 declaration files
+>>>>>>> Gatsby setup
 typings/
 
 # Optional npm cache directory
@@ -51,6 +59,7 @@ typings/
 # Output of 'npm pack'
 *.tgz
 
+<<<<<<< HEAD
 # Yarn Integrity file
 .yarn-integrity
 
@@ -59,3 +68,21 @@ typings/
 
 # next.js build output
 .next
+=======
+# dotenv environment variables file
+.env
+
+# gatsby files
+.cache/
+public
+
+# Mac files
+.DS_Store
+
+# Yarn
+yarn-error.log
+.pnp/
+.pnp.js
+# Yarn Integrity file
+.yarn-integrity
+>>>>>>> Gatsby setup
