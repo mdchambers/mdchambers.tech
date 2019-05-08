@@ -3,7 +3,7 @@ import React from 'react'
 const Layout = (props) => {
   return (
     <div>
-      <p>This is a layout</p>
+      <p>Header</p>
       {props.children}
     </div>
   )
