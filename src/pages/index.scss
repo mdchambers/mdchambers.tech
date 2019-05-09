@@ -1,0 +1,22 @@
+
+// .profileHeader {
+//     height: 400px;
+//     display: flex;
+// }
+
+$primary-color: rgb(31, 159, 233);
+$secondary-color: rgb(144, 146, 148);
+
+.profilePic {
+    height: 200px;
+    border-radius: 50%;
+    // float: right;
+}
+
+.heroGradient {
+    background: linear-gradient(to right, $primary-color, $secondary-color);
+}
+
+.header {
+    text-align: center
+}
