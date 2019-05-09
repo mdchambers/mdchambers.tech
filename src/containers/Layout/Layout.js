@@ -1,9 +1,11 @@
 import React from 'react'
 
+import Sidebar from '../../components/Sidebar/Sidebar';
+
 const Layout = (props) => {
   return (
     <div>
-      <p>Header</p>
+      {/* <Sidebar /> */}
       {props.children}
     </div>
   )
