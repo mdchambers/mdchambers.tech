@@ -3,6 +3,7 @@ import React from "react";
 import { TypographyStyle, GoogleFont } from 'react-typography';
 import typography from '../utils/typography';
 
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 import Layout from '../containers/Layout/Layout';
 
@@ -54,7 +55,7 @@ export default () => (
                                 <div className="content">
                                     <h1 className="title is-size-4">Portfolio</h1>
                                     <p className="subtitle is-size-5">
-                                        Investigate my portfolio
+                                        Projects small and large
                                     </p>
                                 </div>
                             </div>
@@ -65,10 +66,10 @@ export default () => (
                             <div className="media-content">
                                 <div className="content">
                                     <h1 className="title is-size-4">Social Media</h1>
-                                    <p className="is-size-5">
-                                        github
-                                        <br/>
-                                        linkedin
+                                    <p className="subtitle is-size-5">
+                                        <FaGithub style={{ verticalAlign: 'middle' }}/> Github
+                                        <br style={{ lineHeight: "25px" }}/>
+                                        <FaLinkedin style={{ verticalAlign: 'middle' }}/> LinkedIn
                                     </p>
                                 </div>
                             </div>
