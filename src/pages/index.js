@@ -6,11 +6,19 @@ import typography from '../utils/typography';
 
 import Layout from '../containers/Layout/Layout';
 
-import classes from './index.module.css';
+import './index.scss';
 import pic from '../assets/crop.jpg';
 
 export default () => (
     <Layout>
-        <p>Under construction</p>
+        <TypographyStyle typography={typography} />
+        <GoogleFont typography={typography} />
+        <section className="hero is-success heroGradient is-medium">
+            <div className="hero-body header">
+                <h1 className="title">Michael D Chambers</h1>
+                <h2 className="subtitle">Data analyst / full-stack web developer</h2>
+            </div>
+        </section>
+        {/* <img className="profilePic" src={pic} alt="Profile"></img>                 */}
     </Layout>
 )

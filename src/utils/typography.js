@@ -1,5 +1,5 @@
 import Typography from "typography"
-import grandViewTheme from "typography-theme-twin-peaks"
+import grandViewTheme from "typography-theme-fairy-gates"
 
 const typography = new Typography(grandViewTheme)
 
