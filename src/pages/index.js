@@ -44,7 +44,7 @@ export default () => (
                                 <div className="content">
                                     <h1 className="title is-size-4">Resume</h1>
                                     <p className="subtitle is-size-5">
-                                        Download my resume <a href={'resume.pdf'}>here</a>
+                                        Download my resume <a className="nounderline" href={'resume.pdf'}>here</a>
                                     </p>
                                 </div>
                             </div>
@@ -56,7 +56,7 @@ export default () => (
                                 <div className="content">
                                     <h1 className="title is-size-4">Portfolio</h1>
                                     <p className="subtitle is-size-5">
-                                        Projects small and large
+                                        Check out my GitHub!
                                     </p>
                                 </div>
                             </div>
