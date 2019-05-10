@@ -29,9 +29,10 @@ export default () => (
                                 <div className="content">
                                     <h1 className="title is-size-4">About Me</h1>
                                     <p className="subtitle is-size-6">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                                        sed do eiusmod tempor incididunt ut labore et dolore magna 
-                                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                                        Hi! I'm a full-stack web developer with experience in a variety of web technologies (please peruse my resume for details). 
+                                        I received my PhD in Biochemistry in UCLA, working primarily to develop software to derive insights from large biological
+                                        data sets. During that time, I discovered my true passion is in software development more broadly, and since graduation I
+                                        have sought to apply my skills to interesting problems outside of the sciences.
                                     </p>
                                 </div>
                             </div>
