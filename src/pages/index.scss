@@ -38,3 +38,7 @@ $secondary-color: rgb(144, 146, 148);
     display: flex;
     align-items: center;
 }
+
+a.nounderline {
+    text-decoration: none !important;
+}
