@@ -30,8 +30,8 @@ export default () => (
                                     <h1 className="title is-size-4">About Me</h1>
                                     <p className="subtitle is-size-6">
                                         Hi! I'm a full-stack web developer with experience in a variety of web technologies (please peruse my resume for details). 
-                                        I received my PhD in Biochemistry in UCLA, working primarily to develop software to derive insights from large biological
-                                        data sets. During that time, I discovered my true passion is in software development more broadly, and since graduation I
+                                        I received my PhD in Biochemistry in UCLA, during which I developed software to derive insights from large biological
+                                        data sets. During that time, I discovered my true passion lies in software development more generally, and since graduation I
                                         have sought to apply my skills to interesting problems outside of the sciences.
                                     </p>
                                 </div>
@@ -44,7 +44,7 @@ export default () => (
                                 <div className="content">
                                     <h1 className="title is-size-4">Resume</h1>
                                     <p className="subtitle is-size-5">
-                                        Download my resume
+                                        Download my resume <a href={'resume.pdf'}>here</a>
                                     </p>
                                 </div>
                             </div>
@@ -68,9 +68,13 @@ export default () => (
                                 <div className="content">
                                     <h1 className="title is-size-4">Social Media</h1>
                                     <p className="subtitle is-size-5">
-                                        <FaGithub style={{ verticalAlign: 'middle' }}/> Github
+                                        <a className="nounderline" href="https://github.com/perturbation">
+                                            <FaGithub style={{ verticalAlign: 'middle' }}/> Github
+                                        </a>
                                         <br style={{ lineHeight: "25px" }}/>
-                                        <FaLinkedin style={{ verticalAlign: 'middle' }}/> LinkedIn
+                                        <a className="nounderline" href="https://www.linkedin.com/in/mdchambers/">
+                                            <FaLinkedin style={{ verticalAlign: 'middle' }}/> LinkedIn
+                                        </a>
                                     </p>
                                 </div>
                             </div>
