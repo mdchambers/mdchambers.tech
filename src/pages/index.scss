@@ -4,8 +4,9 @@
 //     display: flex;
 // }
 
-$primary-color: rgb(31, 159, 233);
-$secondary-color: rgb(144, 146, 148);
+$primary-color: #24243e;
+$secondary-color: #302b63;
+$tertiary-color: #0f0c29;
 
 .profilePic {
     height: 200px;
@@ -14,7 +15,12 @@ $secondary-color: rgb(144, 146, 148);
 }
 
 .heroGradient {
-    background: linear-gradient(to right, $primary-color, $secondary-color);
+    // background: linear-gradient(to right, $primary-color, $secondary-color);
+    background: #0f0c29;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, $primary-color, $secondary-color, $tertiary-color); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, $primary-color, $secondary-color, $tertiary-color);  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    box-shadow: 0px 20px 20px black;
 }
 
 .header {
@@ -33,6 +39,10 @@ $secondary-color: rgb(144, 146, 148);
     // align-content: center;
 }
 
+.hero-body h1,
+.hero-body h2 {
+    color: white;
+}
 .main-body {
     width: 75%;
     display: flex;

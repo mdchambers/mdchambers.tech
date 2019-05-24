@@ -8,13 +8,13 @@ import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import Layout from '../containers/Layout/Layout';
 
 import './index.scss';
-import pic from '../assets/crop.jpg';
+// import pic from '../assets/crop.jpg';
 
 export default () => (
     <Layout>
         <TypographyStyle typography={typography} />
         <GoogleFont typography={typography} />
-        <section className="hero is-success heroGradient is-medium">
+        <section className="hero heroGradient is-medium">
             <div className="hero-body header">
                 <h1 className="title">Michael D Chambers</h1>
                 <h2 className="subtitle">data analyst / full-stack web developer</h2>
