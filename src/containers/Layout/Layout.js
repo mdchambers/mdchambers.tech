@@ -1,11 +1,10 @@
 import React from 'react'
 
-// import Sidebar from '../../components/Sidebar/Sidebar';
+import styles from './Layout.module.scss';
 
 const Layout = (props) => {
   return (
-    <div>
-      {/* <Sidebar /> */}
+    <div className={styles.main} style={{background: `url('img/waves.png') top center no-repeat`} }>
       {props.children}
     </div>
   )
