@@ -1,3 +1,6 @@
+# Custom stuff
+static/video
+
 # Logs
 logs
 *.log
