@@ -3,10 +3,7 @@
 //   height: 300px;
 // }
 
-$foo: #351f39;
-$bar: #726a95;
-$baz: #709fb0;
-$qux: #a0c1b8;
+
 
 ul {
   list-style: none;
@@ -52,8 +49,6 @@ ul li a:hover {
 
 .container div {
   position: relative;
-  // text-align: center;
-  // align-content: center;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -64,18 +59,3 @@ ul li a:hover {
   font-size: 50px;
 }
 
-#foo {
-  background-color: $foo;
-}
-
-#bar {
-  background-color: $bar;
-}
-
-#baz {
-  background-color: $baz;
-}
-
-#qux {
-  background-color: $qux;
-}

@@ -1,8 +1,9 @@
 import React from "react"
 
-import styles from "./test.module.scss"
+import "./slides.scss"
+import styles from "./slides.module.scss"
 
-const test = () => {
+const slides = () => {
   return (
     <React.Fragment>
       <ul>
@@ -29,4 +30,4 @@ const test = () => {
   )
 }
 
-export default test
+export default slides
