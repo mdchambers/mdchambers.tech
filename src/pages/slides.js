@@ -3,29 +3,24 @@ import React from "react"
 import "./slides.scss"
 import styles from "./slides.module.scss"
 
+import Slide from "../components/Slide/Slide"
+import SlideNav from "../components/SlideNav/SlideNav"
+
 const slides = () => {
+  const slideNames = ["foo", "bar", "baz", "qux"]
+  const slideColors = ["#351f39", "#726a95", "#709fb0", "#a0c1b8"]
+  const slideContent = ["foo", "bar", "baz", "qux"]
+  const slides = slideNames.map((n, idx) => {
+    return (
+      <Slide key={n} id={n} bg={slideColors[idx]}>
+        {slideContent[idx]}
+      </Slide>
+    )
+  })
   return (
     <React.Fragment>
-      <ul>
-        <li>
-          <a href="#foo">foo</a>
-        </li>
-        <li>
-          <a href="#bar">bar</a>
-        </li>
-        <li>
-          <a href="#baz">baz</a>
-        </li>
-        <li>
-          <a href="#qux">qux</a>
-        </li>
-      </ul>
-      <div className={styles.container}>
-        <div id="foo">foo</div>
-        <div id="bar">bar</div>
-        <div id="baz">baz</div>
-        <div id="qux">qux</div>
-      </div>
+      <SlideNav slides={slideNames}/>
+      {slides}
     </React.Fragment>
   )
 }
