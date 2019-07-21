@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Hero renders correctly 1`] = `
+<section
+  className="hero is-small css-ufd4nz"
+>
+  <div
+    className="hero-body"
+  >
+    <div
+      className="columns is-vcentered"
+    >
+      <div
+        className="column is-one-third css-1e2fy0l"
+      >
+        <img
+          alt=""
+          className="css-cm999c"
+          src="img/self2_crop.png"
+        />
+      </div>
+      <div
+        className="column"
+      >
+        <h1
+          className="title css-jk6p7n"
+        >
+          Michael D Chambers
+        </h1>
+        <h2
+          className="subtitle css-5lln03"
+        >
+          full-stack web developer & data analyst
+        </h2>
+      </div>
+    </div>
+  </div>
+</section>
+`;
