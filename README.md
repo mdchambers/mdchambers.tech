@@ -1,0 +1,4 @@
+* Slides
+  * SlideNav
+    * SlideNavElement
+  * Slide

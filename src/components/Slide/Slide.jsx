@@ -5,9 +5,9 @@ import styles from "./Slide.module.scss"
 
 const Slide = props => {
   return (
-    <div id={props.id} className={styles.container} style={{ backgroundColor: props.bg }}>
+    <section id={props.id} className={styles.container} style={{ backgroundColor: props.bg }}>
       {props.children}
-    </div>
+    </section>
   )
 }
 

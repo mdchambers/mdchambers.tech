@@ -1,7 +1,6 @@
 import React from "react"
 
-import "./slides.scss"
-import styles from "./slides.module.scss"
+// import styles from "./slides.module.scss"
 
 import Slide from "../components/Slide/Slide"
 import SlideNav from "../components/SlideNav/SlideNav"
@@ -19,8 +18,10 @@ const slides = () => {
   })
   return (
     <React.Fragment>
-      <SlideNav slides={slideNames}/>
-      {slides}
+      <nav>
+        <SlideNav slides={slideNames} />
+      </nav>
+      <main>{slides}</main>
     </React.Fragment>
   )
 }
