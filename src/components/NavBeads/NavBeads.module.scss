@@ -4,9 +4,13 @@
   position: fixed;
   top: 0;
   // transform: translateY(100%);
-  margin-left: 10px;
+  margin-left: 25px;
   width: 100px;
   background: linear-gradient(#fff, #fff) no-repeat center/2px 100%;
+  z-index: 100;
+  margin-top: 15vh;
+  display: flex;
+  align-items: center;
 }
 
 .navElement {
@@ -23,6 +27,13 @@
 
 .navElement:first-of-type {
   margin-top: 0;
+  height: 125px;
+  width: 125px;
+}
+
+.navElement:first-of-type a {
+  height: 125px;
+  width: 125px;
 }
 
 .navElement:last-of-type {

@@ -1,82 +1,71 @@
-import React from "react";
+import React from "react"
 
-import { TypographyStyle, GoogleFont } from 'react-typography';
-import typography from '../utils/typography';
+import { TypographyStyle, GoogleFont } from "react-typography"
+import typography from "../utils/typography"
 
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { FaGithub, FaLinkedin } from "react-icons/fa"
 
-import Layout from '../containers/Layout/Layout';
-import Hero from '../components/Hero/Hero';
-import './index.scss';
+import NavBeads from "../components/NavBeads/NavBeads"
+import Slide from "../components/Slide/Slide"
+
+import VideoSlide from "../components/Slides/VideoSlide"
+import IntroSlide from "../components/SLides/IntroSlide"
+import AboutSlide from "../components/Slides/AboutSlide"
+import ProjectsSlide from "../components/Slides/ProjectsSlide"
+import ContactSlide from "../components/Slides/ContactSlide"
+
+import "./index.scss"
 // import pic from '../assets/crop.jpg';
 
-export default () => (
-    <Layout>
-        <TypographyStyle typography={typography} />
-        <GoogleFont typography={typography} />
-        <Hero />
-        <section>
-            <div className="container main-body">
-                <div className="columns is-multiline">
-                    <div className="column about-me is-full">
-                        <article className="media">
-                            <div className="media-content">
-                                <div className="content">
-                                    <h1 className="title is-size-4">About Me</h1>
-                                    <p className="subtitle is-size-6">
-                                        I'm a full-stack web developer with experience in a variety of web technologies (please peruse my resume for details). 
-                                        I received my PhD in Biochemistry in UCLA, during which I developed software to derive insights from large biological
-                                        data sets. During that time, I discovered my true passion lies in software development more generally, and since graduation I
-                                        have sought to apply my skills to interesting problems outside of the sciences.
-                                    </p>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                    <div className="column is-one-third">
-                        <article className="media">
-                            <div className="media-content">
-                                <div className="content">
-                                    <h1 className="title is-size-4">Resume</h1>
-                                    <p className="subtitle is-size-5">
-                                        Download my resume <a className="nounderline" href={'resume.pdf'}>here</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                    <div className="column is-one-third">
-                        <article className="media">
-                            <div className="media-content">
-                                <div className="content">
-                                    <h1 className="title is-size-4">Portfolio</h1>
-                                    <p className="subtitle is-size-5">
-                                        Check out my GitHub!
-                                    </p>
-                                </div>
-                            </div>
-                        </article>
-                    </div>                
-                    <div className="column is-one-third">
-                        <article className="media">
-                            <div className="media-content">
-                                <div className="content">
-                                    <h1 className="title is-size-4">Social Media</h1>
-                                    <p className="subtitle is-size-5">
-                                        <a className="nounderline" href="https://github.com/perturbation">
-                                            <FaGithub style={{ verticalAlign: 'middle' }}/> Github
-                                        </a>
-                                        <br style={{ lineHeight: "25px" }}/>
-                                        <a className="nounderline" href="https://www.linkedin.com/in/mdchambers/">
-                                            <FaLinkedin style={{ verticalAlign: 'middle' }}/> LinkedIn
-                                        </a>
-                                    </p>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </Layout>
-)
+const slideInfo = {
+  intro: {
+    name: "Intro",
+    bg: "#351f39",
+    content: <IntroSlide />,
+  },
+  about: {
+    name: "About Me",
+    bg: "#726a95",
+    content: <AboutSlide />,
+  },
+  projects: {
+    name: "Projects",
+    bg: "#709fb0",
+    content: <ProjectsSlide />,
+  },
+  contact: {
+    name: "Contact",
+    bg: "#a0c1b8",
+    content: <ContactSlide />,
+  },
+}
+
+export default () => {
+  const slides = []
+  const navInfo = {
+    ids: [],
+    names: [],
+  }
+  Object.entries(slideInfo).forEach(([key, val]) => {
+    console.log(key)
+    slides.push(
+      <Slide id={key} key={key} bg={val.bg}>
+        {val.content}
+      </Slide>
+    )
+    navInfo.ids.push(key)
+    navInfo.names.push(val.name)
+  })
+
+  // Set top nav to logo
+  navInfo.names[0] = <img src="img/favicon2.png" alt="profile" />
+
+  return (
+    <React.Fragment>
+      <main>
+        <NavBeads ids={navInfo.ids} names={navInfo.names} />
+        {slides}
+      </main>
+    </React.Fragment>
+  )
+}
