@@ -9,7 +9,9 @@ const NavBeads = props => {
   const navs = props.ids.map((name, idx) => {
     return (
       <li className={styles.navElement} key={name}>
-        <a href={`#${name}`}>{props.names ? props.names[idx] : name}</a>
+        <a href={`#${name}`}>
+          {props.names ? props.names[idx] : name}
+        </a>
       </li>
     )
   })
