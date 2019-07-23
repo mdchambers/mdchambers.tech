@@ -4,7 +4,7 @@ import PropTypes from "prop-types"
 import styles from './TestDiv.module.scss';
 
 const TestDiv = props => {
-  console.log(props);
+  // console.log(props);
   return (
     <section className={styles.navDiv} id={props.title} style={{ backgroundColor: props.color }}>
       {props.children}

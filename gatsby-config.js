@@ -8,6 +8,6 @@ module.exports = {
       },
       'gatsby-plugin-react-helmet',
       `gatsby-plugin-sass`,
-      'gatsby-plugin-emotion',
+      'gatsby-plugin-emotion'
     ],
   }
