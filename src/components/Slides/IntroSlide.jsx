@@ -1,11 +1,26 @@
 import React from "react"
+import classNames from "classnames"
 
-// import {createUseStyles} from "react-jss"
+import styles from "./slides.module.scss"
 
 const IntroSlide = props => {
+  // console.log(classes);
+  // console.log('rendering')
   return (
-    <div>
-      <h1>Michael Chambers</h1>
+    <div className={styles.wrapper}>
+      <div className="columns">
+        <div className="column is-one-third">
+          <img
+            className={styles.profilePic}
+            src="img/placeholder_square.png"
+            alt="Profile pic"
+          />
+        </div>
+        <div className="column auto">
+          <h1 className={styles.introTitle}>Michael D</h1>
+          <h1 className={styles.introTitle}>Chambers</h1>
+        </div>
+      </div>
     </div>
   )
 }

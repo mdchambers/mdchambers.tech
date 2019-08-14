@@ -28,7 +28,7 @@ const NavBeads = props => {
 
 NavBeads.propTypes = {
   ids: PropTypes.arrayOf(PropTypes.string).isRequired,
-  names: PropTypes.arrayOf(PropTypes.string),
+  names: PropTypes.array,
 }
 
 export default NavBeads

@@ -4,7 +4,7 @@ import TestDiv from "../../test_components/TestDiv"
 // import TestNav from "../../test_components/TestNav"
 import NavBeads from "../../components/NavBeads/NavBeads"
 
-import styles from "./testbed.module.scss"
+// import styles from "./testbed.module.scss"
 import "./testbed.scss"
 
 const testbed = props => {
